@@ -44,12 +44,7 @@ class ThreadSelectionViewController: UIViewController, UITableViewDelegate, UITa
     
     @IBAction func madeIntentToPost(_ sender: UIButton) {
         if let destThread = userSelection.text {
-            if var threadList = threads[destThread] {
-                threadList.append(PostInfo(imageToPost!, "bpearl"))
-                threads[destThread] = threadList
-            } else {
-                return
-            }
+            threads[destThread]!.append(PostInfo(imageToPost!, "bpearl"))
             let alert = UIAlertController(title: "Post Successful!",
                                           message: "Your image has been successfully posted to " + destThread,
                                           preferredStyle: UIAlertControllerStyle.alert)
