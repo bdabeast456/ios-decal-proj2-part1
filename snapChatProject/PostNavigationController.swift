@@ -26,6 +26,6 @@ class PostNavigationController: UINavigationController {
         self.navigationBar.barTintColor = UIColor.darkGray
         self.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white, NSFontAttributeName: UIFont.systemFont(ofSize: 30)]
         self.navigationBar.tintColor = UIColor.white
-        self.navigationBar.backItem?.backBarButtonItem = UIBarButtonItem(title:"", style:.plain, target:nil, action:nil)
+        self.navigationBar.backItem?.backBarButtonItem = UIBarButtonItem(title:"Snapchat 2.0", style:.plain, target:nil, action:nil)
     }
 }

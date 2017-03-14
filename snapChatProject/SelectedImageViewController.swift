@@ -25,7 +25,6 @@ class SelectedImageViewController: UIViewController {
     }
 
     func backToPrevious() -> Void {
-        print("HI")
         _ = self.navigationController?.popViewController(animated: true)
     }
     

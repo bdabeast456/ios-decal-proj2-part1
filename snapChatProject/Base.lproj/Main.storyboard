@@ -108,7 +108,9 @@
                             <constraint firstItem="wYC-QR-9eI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="reJ-hc-ely"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Snapchat 2.0" id="1DI-gn-L1G"/>
+                    <navigationItem key="navigationItem" title="Snapchat 2.0" id="1DI-gn-L1G">
+                        <barButtonItem key="backBarButtonItem" title=" " id="9Kn-RJ-PMM"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="imageCollectionView" destination="wYC-QR-9eI" id="lwC-Kg-QfQ"/>
                         <segue destination="jPG-Td-zrj" kind="show" identifier="SelectionToPostSegue" id="NMD-F1-haS"/>
@@ -340,7 +342,9 @@
                             <constraint firstAttribute="trailing" secondItem="wib-Bg-DPf" secondAttribute="trailing" id="pmj-UQ-Dah"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Snapchat 2.0" id="tCU-U4-pj2"/>
+                    <navigationItem key="navigationItem" title="Snapchat 2.0" id="tCU-U4-pj2">
+                        <barButtonItem key="backBarButtonItem" title=" " id="VIV-LZ-xzd"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="feedTable" destination="wib-Bg-DPf" id="W80-HW-a4f"/>
                         <segue destination="D1n-fm-NS7" kind="show" identifier="FeedToPostSegue" id="z7i-MZ-Hja"/>

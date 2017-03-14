@@ -21,11 +21,12 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         // Do any additional setup after loading the view.
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         self.navigationController?.isNavigationBarHidden = false
         self.tabBarController?.tabBar.isHidden = false
         feedTable.reloadData()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,11 +40,6 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
         return nil
     }
-    
-    /*func tableView(_ tableView: UITableView, numberOfSectionsInTableView: Int) -> Int {
-        print(threadNames.count)
-        return threadNames.count
-    }*/
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return threadNames.count

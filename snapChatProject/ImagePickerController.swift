@@ -30,7 +30,11 @@ class ImagePickerController: UIViewController, UICollectionViewDataSource, UICol
         performSegue(withIdentifier: "SelectionToPostSegue", sender: nil)
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let dest = segue.destination as? ThreadSelectionViewController {
+            dest.imageToPost = imageToPost
+        }
+    }
     
     //DON'T MODIFY CODE HERE AND BELOW!
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -48,11 +52,5 @@ class ImagePickerController: UIViewController, UICollectionViewDataSource, UICol
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let selectedCell = collectionView.cellForItem(at: indexPath) as! imageCollectionVieCell
         selectImage(selectedCell.image.image!)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let dest = segue.destination as? ThreadSelectionViewController {
-            dest.imageToPost = imageToPost
-        }
     }
 }
