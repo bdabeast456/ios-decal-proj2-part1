@@ -11,5 +11,4 @@ import UIKit
 class imageCollectionVieCell: UICollectionViewCell {
     
     @IBOutlet var image: UIImageView!
-
 }

@@ -17,6 +17,12 @@
 		4196F2DD1E650ECA009916E4 /* ImageFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4196F2DC1E650ECA009916E4 /* ImageFeed.swift */; };
 		4196F2E31E6514EE009916E4 /* ImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4196F2E21E6514EE009916E4 /* ImagePickerController.swift */; };
 		4196F2ED1E6609B0009916E4 /* PostNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4196F2EC1E6609B0009916E4 /* PostNavigationController.swift */; };
+		77A3BCC31E7667BE00F83D87 /* PostInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A3BCC21E7667BE00F83D87 /* PostInfo.swift */; };
+		77A3BCC71E76FC0000F83D87 /* ThreadSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A3BCC61E76FC0000F83D87 /* ThreadSelectionViewController.swift */; };
+		77A3BCC91E76FC3300F83D87 /* ThreadPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A3BCC81E76FC3300F83D87 /* ThreadPostCell.swift */; };
+		77A3BCCD1E7718E000F83D87 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A3BCCC1E7718E000F83D87 /* FeedViewController.swift */; };
+		77A3BCCF1E7719D200F83D87 /* PostTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A3BCCE1E7719D200F83D87 /* PostTableCell.swift */; };
+		77A3BCD11E773C2E00F83D87 /* SelectedImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A3BCD01E773C2E00F83D87 /* SelectedImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +38,12 @@
 		4196F2DC1E650ECA009916E4 /* ImageFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFeed.swift; sourceTree = "<group>"; };
 		4196F2E21E6514EE009916E4 /* ImagePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerController.swift; sourceTree = "<group>"; };
 		4196F2EC1E6609B0009916E4 /* PostNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostNavigationController.swift; sourceTree = "<group>"; };
+		77A3BCC21E7667BE00F83D87 /* PostInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostInfo.swift; sourceTree = "<group>"; };
+		77A3BCC61E76FC0000F83D87 /* ThreadSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadSelectionViewController.swift; sourceTree = "<group>"; };
+		77A3BCC81E76FC3300F83D87 /* ThreadPostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadPostCell.swift; sourceTree = "<group>"; };
+		77A3BCCC1E7718E000F83D87 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		77A3BCCE1E7719D200F83D87 /* PostTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableCell.swift; sourceTree = "<group>"; };
+		77A3BCD01E773C2E00F83D87 /* SelectedImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +69,7 @@
 		417986CD1E66571B0050E1DF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				77A3BCC21E7667BE00F83D87 /* PostInfo.swift */,
 				4196F2DC1E650ECA009916E4 /* ImageFeed.swift */,
 			);
 			name = Model;
@@ -65,6 +78,8 @@
 		417986CE1E6657650050E1DF /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				77A3BCCE1E7719D200F83D87 /* PostTableCell.swift */,
+				77A3BCC81E76FC3300F83D87 /* ThreadPostCell.swift */,
 				417986C81E664AE40050E1DF /* imageCollectionVieCell.swift */,
 			);
 			name = Cells;
@@ -73,6 +88,9 @@
 		417986CF1E6657910050E1DF /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				77A3BCCC1E7718E000F83D87 /* FeedViewController.swift */,
+				77A3BCD01E773C2E00F83D87 /* SelectedImageViewController.swift */,
+				77A3BCC61E76FC0000F83D87 /* ThreadSelectionViewController.swift */,
 				417986C41E6632C40050E1DF /* TabBarController.swift */,
 				4196F2EC1E6609B0009916E4 /* PostNavigationController.swift */,
 				417986CE1E6657650050E1DF /* Cells */,
@@ -183,13 +201,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77A3BCC71E76FC0000F83D87 /* ThreadSelectionViewController.swift in Sources */,
 				417986CB1E664CB60050E1DF /* ImageFlowLayout.swift in Sources */,
 				4196F2E31E6514EE009916E4 /* ImagePickerController.swift in Sources */,
 				417986C51E6632C40050E1DF /* TabBarController.swift in Sources */,
+				77A3BCCF1E7719D200F83D87 /* PostTableCell.swift in Sources */,
+				77A3BCC31E7667BE00F83D87 /* PostInfo.swift in Sources */,
 				417986C91E664AE40050E1DF /* imageCollectionVieCell.swift in Sources */,
+				77A3BCD11E773C2E00F83D87 /* SelectedImageViewController.swift in Sources */,
 				4196F2DD1E650ECA009916E4 /* ImageFeed.swift in Sources */,
 				4196F2CB1E6509E8009916E4 /* AppDelegate.swift in Sources */,
 				4196F2ED1E6609B0009916E4 /* PostNavigationController.swift in Sources */,
+				77A3BCCD1E7718E000F83D87 /* FeedViewController.swift in Sources */,
+				77A3BCC91E76FC3300F83D87 /* ThreadPostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

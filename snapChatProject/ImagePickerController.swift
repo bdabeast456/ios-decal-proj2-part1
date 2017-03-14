@@ -10,6 +10,8 @@ import UIKit
 
 class ImagePickerController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
+    var imageToPost: UIImage!
+    
     @IBOutlet var imageCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +26,8 @@ class ImagePickerController: UIViewController, UICollectionViewDataSource, UICol
 
     func selectImage(_ image: UIImage) {
         //The image being selected is passed in as "image".
+        imageToPost = image
+        performSegue(withIdentifier: "SelectionToPostSegue", sender: nil)
     }
     
     
@@ -40,8 +44,15 @@ class ImagePickerController: UIViewController, UICollectionViewDataSource, UICol
         cell.image.image = allImages[indexPath.row]
         return cell
     }
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let selectedCell = collectionView.cellForItem(at: indexPath) as! imageCollectionVieCell
         selectImage(selectedCell.image.image!)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let dest = segue.destination as? ThreadSelectionViewController {
+            dest.imageToPost = imageToPost
+        }
     }
 }
