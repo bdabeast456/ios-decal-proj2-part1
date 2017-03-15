@@ -13,6 +13,8 @@ class ThreadSelectionViewController: UIViewController, UITableViewDelegate, UITa
     @IBOutlet weak var userSelection: UILabel!
     
     var imageToPost: UIImage!
+    
+    var categorySelected: Bool = false
         
     @IBOutlet weak var threadTable: UITableView!
     
@@ -34,6 +36,7 @@ class ThreadSelectionViewController: UIViewController, UITableViewDelegate, UITa
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         userSelection.text = threadNames[indexPath.row]
+        categorySelected = true
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -43,6 +46,10 @@ class ThreadSelectionViewController: UIViewController, UITableViewDelegate, UITa
     }
     
     @IBAction func madeIntentToPost(_ sender: UIButton) {
+        if !categorySelected {
+            return
+        }
+        
         if let destThread = userSelection.text {
             threads[destThread]!.append(PostInfo(imageToPost!, "bpearl"))
             let alert = UIAlertController(title: "Post Successful!",

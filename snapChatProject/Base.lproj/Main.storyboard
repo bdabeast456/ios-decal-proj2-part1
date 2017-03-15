@@ -72,7 +72,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="pickImageCell" id="x2i-KI-u6j" customClass="imageCollectionVieCell" customModule="snapChatProject" customModuleProvider="target">
-                                        <rect key="frame" x="70" y="0.0" width="236" height="203"/>
+                                        <rect key="frame" x="69.5" y="0.0" width="236" height="203"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="236" height="203"/>
@@ -138,10 +138,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="iuw-Sl-s1L" firstAttribute="top" secondItem="JZB-8i-f74" secondAttribute="bottom" id="22N-sy-vEE"/>
                             <constraint firstAttribute="trailing" secondItem="JZB-8i-f74" secondAttribute="trailing" id="71m-tC-jZX"/>
                             <constraint firstItem="JZB-8i-f74" firstAttribute="leading" secondItem="ZnE-cG-69Q" secondAttribute="leading" id="LoK-C5-F7O"/>
-                            <constraint firstItem="JZB-8i-f74" firstAttribute="top" secondItem="MtQ-Hq-nAd" secondAttribute="bottom" id="eja-FW-HBQ"/>
-                            <constraint firstItem="iuw-Sl-s1L" firstAttribute="top" secondItem="JZB-8i-f74" secondAttribute="bottom" id="tvS-Zh-4JQ"/>
+                            <constraint firstItem="JZB-8i-f74" firstAttribute="top" secondItem="MtQ-Hq-nAd" secondAttribute="bottom" id="kI1-JP-91O"/>
                         </constraints>
                     </view>
                     <connections>
@@ -176,7 +176,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="81"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MTm-gQ-CGn" id="dyf-bW-YnV">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="81"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ThreadHolder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1N-cP-V7U">
@@ -290,7 +290,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="62"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pWi-J8-NP2" id="Icy-KJ-deh">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="61"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="62"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gnv-Gc-wAV">
